@@ -8,10 +8,10 @@
             "args": [
                 "-g",
                 "-std=c++17",
-                "-I${workspaceFolder}/include",
-		        "-L${workspaceFolder}/lib",				
-		        "${workspaceFolder}/src/\\*.cpp",				
-		        "${workspaceFolder}/src/glad.c",
+                "-I${workspaceFolder}/Include",
+		        "-L${workspaceFolder}/Lib",				
+		        "${workspaceFolder}/Src/\\*.cpp",				
+		        "${workspaceFolder}/Src/Dependencies/\\*",
                 "-lglfw3dll",
                 "-o",
                 "${workspaceFolder}/Main.exe"
