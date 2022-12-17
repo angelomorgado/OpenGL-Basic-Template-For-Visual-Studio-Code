@@ -9,9 +9,10 @@
                 "-g",
                 "-std=c++17",
                 "-I${workspaceFolder}/Include",
-		        "-L${workspaceFolder}/Lib",				
-		        "${workspaceFolder}/Src/\\*.cpp",				
-		        "${workspaceFolder}/Src/Dependencies/\\*",
+                "-I${workspaceFolder}/Dependencies/Include",
+                "-L${workspaceFolder}/Lib",
+                "${workspaceFolder}/Src/\\*.cpp",
+                "${workspaceFolder}/Dependencies/Src/\\*",
                 "-lglfw3dll",
                 "-o",
                 "${workspaceFolder}/Main.exe"
@@ -22,10 +23,7 @@
             "problemMatcher": [
                 "$gcc"
             ],
-            "group": {
-                "kind": "build",
-                "isDefault": true
-            }
+            "group": "build"
         }
     ]
 }
