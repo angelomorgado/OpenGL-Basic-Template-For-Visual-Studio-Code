@@ -5,6 +5,8 @@
             "name": "g++.exe - Build and debug active file",
             "type": "cppdbg",
             "request": "launch",
+            // Make this launch.json the default one without having to select it in the debug menu
+            "preLaunchTask": "C/C++: g++.exe build active file",
             "program": "${workspaceFolder}/Main.exe",
             "args": [],
             "stopAtEntry": false,
@@ -20,7 +22,6 @@
                     "ignoreFailures": true
                 }
             ],
-            "preLaunchTask": "C/C++: g++.exe build active file"
         }
     ]
 }
